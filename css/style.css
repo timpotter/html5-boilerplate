@@ -1,0 +1,350 @@
+/*   
+Project: Bitnet.io
+Project URI: http://bitnet.io
+Author: Little Thunder
+Author URI: http://littlethunder.co
+*/
+/* HTML5 RESET
+------------------------------------------------------------------------------------------------------------------------------------------ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* COLOURS 
+------------------------------------------------------------------------------------------------------------------------------------------ */
+/* TYPOGRAPHY
+------------------------------------------------------------------------------------------------------------------------------------------ */
+h1.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 130px;
+  height: 135px;
+  background: url(../images/bitnet-logo.svg);
+  background-size: 130px 135px;
+  display: block;
+  margin: 0 auto 80px; }
+
+h2, h4, .leadin, li, .button {
+  font-family: 'Roboto Slab', serif; }
+
+h2 {
+  padding: 0 20px 55px;
+  font-size: 3em;
+  /* 48/16 */
+  font-weight: 300; }
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  /* 18/16 */ }
+
+p {
+  font-size: 1.625em;
+  /* 26/16 */
+  line-height: 1.325em;
+  margin-bottom: 10px;
+  font-weight: 300; }
+
+.leadin {
+  font-size: 1.75em;
+  /* 28/16 */
+  line-height: 1.35em;
+  font-weight: 300; }
+
+.leadout {
+  font-size: 1.375em;
+  /* 22/16 */
+  margin-top: 40px; }
+
+li {
+  font-weight: 300; }
+
+.button {
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 20px 80px;
+  font-size: 1.5em;
+  /* 24/16 */
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.1); }
+  .button:hover {
+    background: white;
+    color: #333333; }
+
+a {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none; }
+
+/* LAYOUT
+------------------------------------------------------------------------------------------------------------------------------------------ */
+body {
+  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center; }
+
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
+header {
+  background-image: url("../images/omni-channel.png"), -webkit-linear-gradient( #109bc6 0, #28cafb 100%);
+  background-image: url("../images/omni-channel.png"), linear-gradient( #109bc6 0, #28cafb 100%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: white;
+  height: 960px;
+  padding: 60px 0 20px; }
+
+.intro {
+  background: #494955;
+  color: white;
+  padding: 100px 0; }
+  .intro ul {
+    padding: 40px 0; }
+  .intro li {
+    display: inline-block;
+    list-style-type: none;
+    width: 32%; }
+    .intro li img {
+      clear: both;
+      width: 80px;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 20px; }
+
+.come-with-us {
+  background: url("../images/nodes-bg.png") center center no-repeat;
+  color: #333333;
+  padding: 140px 20px; }
+
+.get-in-touch {
+  background: url("../images/get-in-touch-bg.jpg") bottom center no-repeat;
+  color: white;
+  padding: 160px 20px;
+  height: 720px; }
+
+footer {
+  background: #3d3d42;
+  color: #6e6e6e;
+  padding: 100px 0 20px; }
+  footer .signoff-img {
+    width: 560px;
+    padding-bottom: 60px; }
+  footer .address {
+    padding-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  footer p {
+    font-size: 1em;
+    padding-top: 10px;
+    font-weight: 500; }
+  footer a {
+    color: #6e6e6e;
+    text-decoration: underline; }
+  footer small {
+    font-size: 0.8em;
+    padding-top: 60px;
+    display: block;
+    opacity: 0.7;
+    font-weight: normal; }
+
+.column {
+  width: 50%;
+  float: left; }
+
+/* USEFUL CLASSES
+------------------------------------------------------------------------------------------------------------------------------------------ */
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/* CLEARFIX */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* 980PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 980px) {
+  .content {
+    width: 90%; } }
+/* 860PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 720PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 720px) {
+  /* TYPOGRAPHY */
+  h2 {
+    font-size: 2.375em;
+    /* 38/16 */ }
+
+  p {
+    font-size: 1.375em;
+    /* 22/16 */ }
+
+  .leadin {
+    font-size: 1.875em;
+    /* 30/16 */ }
+
+  .leadout {
+    font-size: 1.125em;
+    /* 18/16 */ }
+
+  .button {
+    font-size: 1.375em;
+    /* 22/16 */
+    padding: 15px 60px; }
+
+  .address {
+    font-size: 0.9em; }
+
+  /* LAYOUT */
+  header {
+    background-size: 200%;
+    height: 800px; }
+
+  .intro,
+  .come-with-us,
+  .get-in-touch {
+    padding: 60px 0; }
+
+  .get-in-touch {
+    height: 600px; }
+
+  .signoff-img {
+    max-width: 100%; } }
+/* 460PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 460px) {
+  /* TYPOGRAPHY */
+  h1.logo {
+    width: 80px;
+    height: 85px;
+    background-size: 80px 85px;
+    margin-bottom: 40px; }
+
+  h2 {
+    font-size: 2.125em;
+    /* 34/16 */ }
+
+  p {
+    font-size: 1.125em;
+    /* 18/16 */ }
+
+  .leadin {
+    font-size: 1.625em;
+    /* 26/16 */ }
+
+  .leadout {
+    font-size: 1em; }
+
+  .button {
+    font-size: 1.125em;
+    /* 18/16 */
+    padding: 15px 60px; }
+
+  .address {
+    font-size: 0.8em; }
+
+  .intro ul {
+    padding: 20px 0 0; }
+  .intro li {
+    width: 100%;
+    clear: both;
+    margin-bottom: 20px; }
+
+  /* LAYOUT */
+  header {
+    height: 650px; } }
