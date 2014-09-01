@@ -11,19 +11,21 @@ $text-grey: 		#333333;
 $borderradius: 		5px;
 
 
-/* MIXINS */
+/* PLACEHOLDERS */
 
-@mixin sans-serif {
+%sans-serif {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: $text-grey;
 	}
+
+/* MIXINS */
 
 
 /* TYPOGRAPHY
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 body {
-	 @include sans-serif;
+	 @extend %sans-serif;
 	 -webkit-font-smoothing: antialiased;
 	}
 

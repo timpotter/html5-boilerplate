@@ -75,7 +75,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* change border colour to suit your needs */
+/* Change border colour to suit your needs */
 hr {
   display: block;
   height: 1px;
@@ -87,7 +87,7 @@ hr {
 input, select {
   vertical-align: middle; }
 
-/* apply a natural box layout model to all elements */
+/* Apply a natural box layout model to all elements */
 *,
 *:before,
 *:after {
@@ -95,16 +95,24 @@ input, select {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* Turns off the ugly iOS input shadows */
+input,
+textarea {
+  -webkit-appearance: none; }
+
 /* VARIABLES
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 /* COLOUR */
 /* SETTINGS */
+/* PLACEHOLDERS */
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: #333333; }
+
 /* MIXINS */
 /* TYPOGRAPHY
 ------------------------------------------------------------------------------------------------------------------------------------------ */
 body {
-  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-  color: #333333;
   -webkit-font-smoothing: antialiased; }
 
 a {
@@ -130,11 +138,6 @@ a {
   height: 0;
   clear: both;
   visibility: hidden; }
-
-/* Turns off the ugly iOS input shadows */
-input,
-textarea {
-  -webkit-appearance: none; }
 
 /* Add a media query where the content naturally breaks. This is not device specific, it's content specific */
 /* 980PX
